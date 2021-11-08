@@ -10,7 +10,17 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <servlet>
+  <context-param>
+  	<param-name>Company_name</param-name>
+  	<param-value>Neosoft Technologies</param-value>
+  </context-param>
+  
+   <context-param>
+  	<param-name>Author_name</param-name>
+  	<param-value>this is Author</param-value>
+  </context-param>
+  
+ <!--  <servlet>
   <servlet-name>HelloServlet</servlet-name>
   <servlet-class>com.neosoft.HelloServlet</servlet-class>
   </servlet>
@@ -18,4 +28,14 @@
   	<servlet-name>HelloServlet</servlet-name>
   	<url-pattern>/hello</url-pattern>  	
   </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>DateServlet</servlet-name>
+  <servlet-class>com.neosoft.DateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DateServlet</servlet-name>
+  	<url-pattern>/dateservlet</url-pattern>
+  	<load-on-startup>1</load-on-startup>  	
+  </servlet-mapping> -->
 </web-app>
