@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome Page</title>
+</head>
+<body style="background: linear-gradient(120deg,skyblue,lightblue,lightgreen,lightgreen);">
+<h2>Welcome User</h2>
+<p id="demo"></p>
+
+<script>
+const d = new Date().toLocaleString();
+document.getElementById("demo").innerHTML = d;
+</script>
+<script type="text/javascript">
+        document.write("<center><font size=+3 style='color: green;'>");
+        var day = new Date();
+        var hr = day.getHours();
+        if (hr >= 0 && hr < 12) {
+            document.write("Good Morning!");
+        } else if (hr == 12) {
+            document.write("Good Noon!");
+        } else if (hr >= 12 && hr <= 17) {
+            document.write("Good Afternoon!");
+        } else {
+            document.write("Good Evening!");
+        }
+        document.write("</font></center>");
+    </script>
+</body>
+</html>
