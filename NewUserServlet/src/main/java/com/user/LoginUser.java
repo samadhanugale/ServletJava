@@ -23,7 +23,7 @@ public class LoginUser extends HttpServlet{
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-resp.setContentType("text/html");
+		resp.setContentType("text/html");
 		
 		String uname = req.getParameter("txtuser");
 		String pass = req.getParameter("txtpass");
